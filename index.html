@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Learning Tracker</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+    
+<script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- WEBSITE HEADER -->
+    <header class="main-header">
+        <h1>MY LEARNING TRACKER</h1>
+        <p>Organise your learning. Track your progress.</p>
+    </header>
+
+
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#goals">Goals</a>
+        <a href="#tasks">Tasks</a>
+        <a href="#progress">Progress</a>
+    </nav>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+
+        <!-- HOME SECTION -->
+        <section id="home">
+            <h2>Welcome Back!</h2>
+
+            <p>
+                Your journey begins with what you do today.
+                Stay consistent and keep improving.
+            </p>
+        </section>
+
+
+        <!-- LEARNING GOALS SECTION -->
+        <section id="goals">
+            <h2>My Learning Goals</h2>
+
+            <div class="goals-grid">
+
+                <div class="goal-card">
+                    <h3>HTML</h3>
+                    <p>Learn how webpages are structured.</p>
+                </div>
+
+                <div class="goal-card">
+                    <h3>CSS</h3>
+                    <p>Learn how webpages are designed.</p>
+                </div>
+
+                <div class="goal-card">
+                    <h3>JavaScript</h3>
+                    <p>Learn how webpages become interactive.</p>
+                </div>
+
+                <div class="goal-card">
+                    <h3>UI/UX</h3>
+                    <p>Learn how to design useful user experiences.</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- TASKS SECTION -->
+        <section id="tasks">
+            <h2>Today's Tasks</h2>
+
+            <!-- ADD TASK FORM -->
+            <form id="task-form">
+
+                <label for="task-name">Task name</label>
+
+                <input
+                    type="text"
+                    id="task-name"
+                    placeholder="Enter your task"
+                    required
+                >
+
+
+                <label for="category">Learning category</label>
+
+                <select id="category" required>
+                    <option value="">Choose a category</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="UI/UX">UI/UX</option>
+                </select>
+
+
+                <label for="deadline">Target date</label>
+
+                <input
+                    type="date"
+                    id="deadline"
+                >
+
+
+                <div class="important-option">
+                    <input
+                        type="checkbox"
+                        id="important"
+                    >
+
+                    <label for="important">Mark as important</label>
+                </div>
+
+
+                <label for="notes">Learning notes</label>
+
+                <textarea
+                    id="notes"
+                    placeholder="Write what you learned"
+                    rows="4"
+                ></textarea>
+
+
+                <button type="submit">Add My Task</button>
+
+            </form>
+
+
+            <!-- TASK LIST -->
+            <h3>My Task List</h3>
+
+            <ol class="task-list">
+                <li>Understand HTML structure</li>
+                <li>Practise CSS styling</li>
+                <li>Learn JavaScript basics</li>
+            </ol>
+
+        </section>
+
+
+        <!-- PROGRESS SECTION -->
+        <section id="progress">
+            <h2>My Progress</h2>
+
+            <p>
+                You are building your learning journey.
+                Keep practising and completing your tasks.
+            </p>
+
+            <p>Progress tracking will become functional when we introduce JavaScript.</p>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="page-footer">
+        <p>Keep growing. Every day counts.</p>
+        <p>My Learning Tracker &copy; 2026</p>
+    </footer>
+
+</body>
+
+</html>
